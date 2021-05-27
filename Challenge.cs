@@ -1,6 +1,6 @@
 using System;
 
-namespace Quest
+namespace adventure_quest
 {
     // An instance of the Challenge class is an occurrence of a single challenge
     public class Challenge

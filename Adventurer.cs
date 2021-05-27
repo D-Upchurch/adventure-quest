@@ -1,4 +1,4 @@
-namespace Quest
+namespace adventure_quest
 {
     // An instance of the Adventurer class is an object that will undergo some challenges
     public class Adventurer

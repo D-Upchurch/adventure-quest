@@ -3,7 +3,7 @@ using System.Collections.Generic;
 
 // Every class in the program is defined within the "Quest" namespace
 // Classes within the same namespace refer to one another without a "using" statement
-namespace Quest
+namespace adventure_quest
 {
     class Program
     {
@@ -42,8 +42,12 @@ namespace Quest
             int minAwesomeness = 0;
             int maxAwesomeness = 100;
 
+
+            // Prompt the user for their name and pass that name to the following constructor.
+            Console.WriteLine("What is your name? ");
+            string adventurerName = Console.ReadLine();
             // Make a new "Adventurer" object using the "Adventurer" class
-            Adventurer theAdventurer = new Adventurer("Jack");
+            Adventurer theAdventurer = new Adventurer($"{adventurerName}");
 
             // A list of challenges for the Adventurer to complete
             // Note we can use the List class here because have the line "using System.Collections.Generic;" at the top of the file.
@@ -79,3 +83,5 @@ namespace Quest
         }
     }
 }
+
+// When the game starts, the adventurer Jack will be subjected to the 5 challenges, guessing right or wrong will alter Jack's awesomeness.
